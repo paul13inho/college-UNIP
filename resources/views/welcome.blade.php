@@ -7,10 +7,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-<div class="container">
+<div class="container-home">
+
+    <div class="intro">
+        <p>Bem vindo *-*Nome da Pessoa*-*</p>
+        <p>*-*Data de hoje*-*</p>
+    </div>
 
     <div class="options">
-
         <button class="book">
             Agendar
         </button>
@@ -18,92 +22,63 @@
         <button class="see">
             Vizualizar
         </button>
-
     </div>
+</div>
 
-    <div class="choices">
+<div class="container-booking">
 
-        <div class="equipments">
-
-            <div class="btn-container">
-                <button>6</button>
-                <label for="">VCR-1</label>
-            </div>
-            <div class="btn-container">
-                <button>6</button>
-                <label for="">VCR-2</label>
-            </div>
-            <div class="btn-container">
-                <button>6</button>
-                <label for="">VCR-3</label>
-            </div>
-            <div class="btn-container">
-                <button>6</button>
-                <label for="">VCR-4</label>
-            </div>
-            <div class="btn-container">
-                <button>6</button>
-                <label for="">DVD-1</label>
-            </div>
-            <div class="btn-container">
-                <button>6</button>
-                <label for="">DVD-2</label>
-            </div>
-            <div class="btn-container">
-                <button>6</button>
-                <label for="">DVD-3</label>
-            </div>
-            <div class="btn-container">
-                <button>6</button>
-                <label for="">DVD-4</label>
-            </div>
-            <div class="btn-container">
-                <button>6</button>
-                <label for="">MIC-1</label>
-            </div>
-            <div class="btn-container">
-                <button>6</button>
-                <label for="">MIC-2</label>
-            </div>
-            <div class="btn-container">
-                <button>6</button>
-                <label for="">MIC-3</label>
-            </div>
-            <div class="btn-container">
-                <button>6</button>
-                <label for="">MIC-4</label>
-            </div>
-
-
-
-            <div class="date">
-
-                <button>6</button>
-
-                <button>7</button>
-
-                <button>8</button>
-
-                <button>9</button>
-
-                <button>10</button>
-
-            </div>
-
-            <div class="end">
-
-                <button>11</button>
-
-                <button>12</button>
-
-                <button>13</button>
-
-                <button>14</button>
-
-                <button>15</button>
-
-            </div>
+    <form action="">
+        <div>
+            <p>Escolha o equipamento:</p>
+            <select name="" id="">
+                <option value="">DVD-1</option>
+                <option value="">DVD-2</option>
+                <option value="">DVD-3</option>
+            </select>
         </div>
+
+        <div>
+            <p>Escolha o dia:</p>
+            <input type="date">
+        </div>
+
+        <div>
+            <p>Escolha o turno:</p>
+            <select name="" id="">
+                <option value="">Matutino</option>
+                <option value="">Vespertino</option>
+                <option value="">Noturno</option>
+            </select>
+        </div>
+
+        <div>
+            <p>Escolha a aula:</p>
+            <select name="" id="">
+                <option value="">Aula 1</option>
+                <option value="">Aula 2</option>
+                <option value="">Aula 3</option>
+                <option value="">Aula 4</option>
+                <option value="">Aula 5</option>
+            </select>
+        </div>
+
+        <button>Confirmar</button>
+    </form>
+</div>
+
+<div class="container-see-and-cancel">
+    <div>
+        <p>Aparece os agendamentos</p>
+
     </div>
+</div>
+
+
+
+
+
+
+
+
 </body>
 </html>
