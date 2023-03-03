@@ -1,3 +1,106 @@
 @tailwind base;
 @tailwind components;
+
+body
+{
+    @apply bg-purple-100 flex h-screen w-full justify-center place-items-center;
+}
+
+.container
+{
+    @apply bg-purple-400 h-h-screen w-w-screen rounded-lg border-dashed border-4 border-purple-600;
+}
+
+.options,
+.choices
+{
+    @apply w-full h-1/2 rounded-lg flex justify-around place-items-center;
+}
+
+.options
+{
+    @apply bg-purple-300;
+}
+
+.choices
+{
+    @apply bg-purple-200;
+}
+
+button
+{
+    @apply bg-purple-600 text-white rounded-lg ;
+}
+
+button:hover,
+button:focus
+{
+    @apply bg-purple-500 ring-4 ring-purple-600 ring-inset;
+}
+
+button.book, button.see
+{
+    @apply text-2xl p-8;
+}
+
+.choices
+{
+    @apply relative overflow-hidden;
+}
+
+.equipments,
+.date,
+.end
+{
+    @apply w-w-screen h-full absolute;
+}
+
+.equipments
+{
+    @apply grid grid-cols-4 gap-1 py-2 mx-4;
+}
+
+.btn-container
+{
+    @apply flex-row justify-center mx-auto;
+}
+
+.equipments button
+{
+    @apply px-8 py-6;
+}
+
+.equipments label
+{
+    @apply flex bg-black text-white justify-center rounded-full mt-1 text-sm;
+}
+
+.date
+{
+    @apply -left-96 bg-green-600;
+}
+
+.end
+{
+    @apply left-96 bg-blue-900;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @tailwind utilities;
