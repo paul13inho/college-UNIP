@@ -8,108 +8,134 @@
 </head>
 <body>
 
-<div class="container-sign-in-login">
+<div class="master-container flex space-x-2">
+    <div class="container-sign-in-login">
 
-    <div class="intro">
-        <p>Bem vindo a Escola das Gostosas</p>
-        <p>*-*Data de hoje*-*</p>
+        <div class="header">
+            <p>Bem vindo a Escola das Gostosas</p>
+            <p>*-*Data de hoje*-*</p>
+        </div>
+
+        <div class="container-form">
+            <form action="">
+                <div>
+                    <p>Insira seu código de funcionário:</p>
+                    <input type="text">
+                </div>
+
+                <div class="pb-10">
+                    <p>Insira a senha:</p>
+                    <input type="password">
+                </div>
+
+                <div class="flex justify-around">
+                    <button class="sign-in">
+                        Cadastrar
+                    </button>
+
+                    <button class="login">
+                        Logar
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <div class="footer">
+            <p>2023. All rights reserved</p>
+        </div>
     </div>
 
-    <div class="container-form">
+    <div class="container-home">
+
+        <div class="header">
+            <p>Bem vindo *-*Nome da Pessoa*-*</p>
+            <p>*-*Data de hoje*-*</p>
+        </div>
+
+        <div class="options">
+            <div>
+                <button class="book">
+                    Agendar
+                </button>
+            </div>
+
+            <div>
+                <button class="see">
+                    Vizualizar
+                </button>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>2023. All rights reserved</p>
+        </div>
+    </div>
+
+    <div class="container-booking">
+
+        <div class="header mb-4">
+            <p>*-*Data de hoje*-*</p>
+        </div>
+
         <form action="">
             <div>
-                <p>Insira seu código de funcionário:</p>
-                <input type="text">
+                <p>Escolha o equipamento:</p>
+                <select name="" id="">
+                    <option value="">DVD-1</option>
+                    <option value="">DVD-2</option>
+                    <option value="">DVD-3</option>
+                </select>
             </div>
 
             <div>
-                <p>Insira a senha:</p>
-                <input type="password">
+                <p>Escolha o dia:</p>
+                <input type="date">
             </div>
 
-            <div class="flex justify-around">
-                <button class="sign-in">
-                    Cadastrar
-                </button>
+            <div>
+                <p>Escolha o turno:</p>
+                <select name="" id="">
+                    <option value="">Matutino</option>
+                    <option value="">Vespertino</option>
+                    <option value="">Noturno</option>
+                </select>
+            </div>
 
-                <button class="login">
-                    Logar
-                </button>
+            <div>
+                <p>Escolha a aula:</p>
+                <select name="" id="">
+                    <option value="">Aula 1</option>
+                    <option value="">Aula 2</option>
+                    <option value="">Aula 3</option>
+                    <option value="">Aula 4</option>
+                    <option value="">Aula 5</option>
+                </select>
+            </div>
+
+            <div class="flex justify-center mt-4">
+                <button class="confirm">Confirmar</button>
             </div>
         </form>
+
+        <div class="footer">
+            <p>2023. All rights reserved</p>
+        </div>
     </div>
 
-
-</div>
-
-<div class="container-home">
-
-    <div class="intro">
-        <p>Bem vindo *-*Nome da Pessoa*-*</p>
-        <p>*-*Data de hoje*-*</p>
-    </div>
-
-    <div class="options">
-        <button class="book">
-            Agendar
-        </button>
-
-        <button class="see">
-            Vizualizar
-        </button>
-    </div>
-</div>
-
-<div class="container-booking">
-
-    <form action="">
-        <div>
-            <p>Escolha o equipamento:</p>
-            <select name="" id="">
-                <option value="">DVD-1</option>
-                <option value="">DVD-2</option>
-                <option value="">DVD-3</option>
-            </select>
+    <div class="container-see-and-cancel">
+        <div class="header">
+            <p>Seus Agendamentos:</p>
+            <p>*-*Data de hoje*-*</p>
         </div>
 
-        <div>
-            <p>Escolha o dia:</p>
-            <input type="date">
+        <div class="bookings">
+            <p class="insert-from-db">vem do banco</p>
+            <p class="cancel">X</p>
         </div>
 
-        <div>
-            <p>Escolha o turno:</p>
-            <select name="" id="">
-                <option value="">Matutino</option>
-                <option value="">Vespertino</option>
-                <option value="">Noturno</option>
-            </select>
+        <div class="footer">
+            <p>2023. All rights reserved</p>
         </div>
-
-        <div>
-            <p>Escolha a aula:</p>
-            <select name="" id="">
-                <option value="">Aula 1</option>
-                <option value="">Aula 2</option>
-                <option value="">Aula 3</option>
-                <option value="">Aula 4</option>
-                <option value="">Aula 5</option>
-            </select>
-        </div>
-
-        <button class="confirm">Confirmar</button>
-    </form>
-</div>
-
-<div class="container-see-and-cancel">
-    <div class="container">
-        <p>Seus Agendamentos:</p>
-
-        <div class="book">
-            <span>vem do banco</span>
-            <button class="cancel">X</button>
-        </div>
-
     </div>
 </div>
 

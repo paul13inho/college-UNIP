@@ -6,99 +6,70 @@ body
     @apply bg-purple-100 flex h-screen w-full justify-center place-items-center gap-2;
 }
 
+/*ALL CONTAINERS FORMATING*/
 .container-home,
 .container-booking,
 .container-see-and-cancel,
 .container-sign-in-login
 {
-    @apply relative h-h-screen w-w-screen rounded-lg border-dashed border-4 border-purple-900 ;
+    @apply relative h-h-screen w-w-screen border-style;
 }
+/*END ALL CONTAINERS FORMATING*/
 
-.container-sign-in-login,
-.container-home
-{
-    @apply flex justify-around place-items-center;
-}
 
-.container-sign-in-login .intro,
-.container-home .intro
+
+
+
+/*INDIVIDUAL CONTAINERS FORMATING*/
+.container-sign-in-login .container-form
 {
-    @apply text-center absolute top-16 right-0 left-0 py-4 space-y-4;
+    top: 50%;
+    transform: translateY(-35%);
+    @apply absolute w-w-screen;
 }
 
 .container-home .options
 {
-    @apply space-x-2 absolute bottom-16 mb-16;
-}
-
-.container-sign-in-login .container-form
-{
-    @apply absolute top-48 right-0 left-0;
+    top: 50%;
+    transform: translateY(-50%);
+    @apply space-y-2 text-center absolute w-w-screen;
 }
 
 .container-booking
 {
-    @apply flex place-items-center;
+    @apply place-items-center;
 }
 
-
-
-.container-see-and-cancel .container
+.container-see-and-cancel .bookings
 {
-    @apply absolute top-16 px-4;
+    @apply flex justify-between place-items-center my-4 mx-2 bg-purple-300 rounded-lg p-4;
 }
 
-.container-see-and-cancel .book
-{
-    @apply flex justify-between my-4 bg-purple-300 rounded-lg;
-}
-
-.container-see-and-cancel .book span
+.container-see-and-cancel .bookings span
 {
     @apply text-xl  px-4 py-4;
 }
+/*END INDIVIDUAL CONTAINERS FORMATING*/
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-button
+/*COMPONENTS*/
+.header
 {
-    @apply bg-purple-600 text-white rounded-lg ;
+    @apply text-center space-y-2 mt-4 mx-4 py-4 border-style
 }
 
-button:hover,
-button:focus
+.footer
 {
-    @apply bg-purple-500 ring-4 ring-purple-600 ring-inset;
+    @apply absolute bottom-0 right-0 left-0 mb-1 text-center;
 }
 
-button.book, button.see, button.confirm, button.sign-in, button.login
+.border-style
 {
-    @apply text-2xl px-10 py-6;
+    @apply border-dashed border-4 border-purple-900;
 }
-
-button.confirm
-{
-    @apply flex mx-auto;
-}
-
-button.cancel
-{
-    @apply rounded-full px-3 py-1 my-3 mx-2 hover:bg-white hover:text-black;
-}
-
-
 
 p
 {
@@ -113,8 +84,68 @@ select
 
 form
 {
-    @apply w-full px-4 absolute top-16;
+    @apply w-full px-4;
 }
+/*END COMPONENTS*/
+
+
+
+
+
+/*BUTTONS*/
+button
+{
+    @apply bg-purple-600 text-white rounded-lg w-44 py-4 text-center shadow-2xl;
+}
+
+button:hover,
+button:focus
+{
+    @apply bg-purple-400 ring-4 ring-purple-600 ring-inset;
+}
+
+button.book, button.see, button.confirm, button.sign-in, button.login
+{
+    @apply text-2xl;
+}
+
+p.cancel
+{
+    @apply rounded-lg mx-2 py-1 px-3 bg-purple-600 text-white font-semibold hover:bg-red-700 cursor-pointer shadow-2xl;
+}
+/*END BUTTONS*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
