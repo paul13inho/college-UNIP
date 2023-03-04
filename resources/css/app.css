@@ -8,36 +8,56 @@ body
 
 .container-home,
 .container-booking,
-.container-see-and-cancel
+.container-see-and-cancel,
+.container-sign-in-login
 {
-    @apply h-h-screen w-w-screen rounded-lg border-dashed border-4 border-purple-900 relative;
+    @apply relative h-h-screen w-w-screen rounded-lg border-dashed border-4 border-purple-900 ;
 }
 
+.container-sign-in-login,
 .container-home
 {
     @apply flex justify-around place-items-center;
 }
 
+.container-sign-in-login .intro,
 .container-home .intro
 {
-    @apply bg-purple-200 text-xl text-center absolute top-0 right-0 left-0 py-4;
+    @apply text-center absolute top-16 right-0 left-0 py-4 space-y-4;
 }
 
 .container-home .options
 {
-    @apply space-x-2;
+    @apply space-x-2 absolute bottom-16 mb-16;
 }
 
+.container-sign-in-login .container-form
+{
+    @apply absolute top-48 right-0 left-0;
+}
 
 .container-booking
 {
-    @apply bg-purple-600;
+    @apply flex place-items-center;
 }
 
-.container-see-and-cancel
+
+
+.container-see-and-cancel .container
 {
-    @apply bg-red-500;
+    @apply absolute top-16 px-4;
 }
+
+.container-see-and-cancel .book
+{
+    @apply flex justify-between my-4 bg-purple-300 rounded-lg;
+}
+
+.container-see-and-cancel .book span
+{
+    @apply text-xl  px-4 py-4;
+}
+
 
 
 
@@ -63,9 +83,37 @@ button:focus
     @apply bg-purple-500 ring-4 ring-purple-600 ring-inset;
 }
 
-button.book, button.see
+button.book, button.see, button.confirm, button.sign-in, button.login
 {
-    @apply text-2xl p-5;
+    @apply text-2xl px-10 py-6;
+}
+
+button.confirm
+{
+    @apply flex mx-auto;
+}
+
+button.cancel
+{
+    @apply rounded-full px-3 py-1 my-3 mx-2 hover:bg-white hover:text-black;
+}
+
+
+
+p
+{
+    @apply text-xl;
+}
+
+input,
+select
+{
+    @apply w-full py-4 px-4 rounded-lg my-4 outline-none;
+}
+
+form
+{
+    @apply w-full px-4 absolute top-16;
 }
 
 
