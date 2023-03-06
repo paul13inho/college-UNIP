@@ -12,28 +12,34 @@
     <div class="container-sign-in-login">
 
         <div class="header">
-            <p>Bem vindo a Escola das Gostosas</p>
+            <p>Colégio Vencer Sempre</p>
             <p>*-*Data de hoje*-*</p>
         </div>
 
         <div class="container-form">
             <form action="">
+
                 <div>
-                    <p>Insira seu código de funcionário:</p>
-                    <input type="text">
+                    <p>Insira seu nome:</p>
+                    <input type="text" id="name">
+                </div>
+
+                <div>
+                    <p>Insira o código de funcionário:</p>
+                    <input type="text" id="code" required>
                 </div>
 
                 <div class="pb-10">
                     <p>Insira a senha:</p>
-                    <input type="password">
+                    <input type="password" id="password" required>
                 </div>
 
                 <div class="flex justify-around">
-                    <button class="sign-in">
+                    <button class="sign-in" onclick="addData()">
                         Cadastrar
                     </button>
 
-                    <button class="login">
+                    <button class="login" onclick="checkData(), setNamePerson()">
                         Logar
                     </button>
                 </div>
@@ -48,7 +54,7 @@
     <div class="container-home">
 
         <div class="header">
-            <p>Bem vindo *-*Nome da Pessoa*-*</p>
+            <p>Bem vindo <span class="namePerson"></span></p>
             <p>*-*Data de hoje*-*</p>
         </div>
 
@@ -140,11 +146,57 @@
 </div>
 
 
+<script>
+    let btnRegister = document.querySelector('.sign-in');
+
+    function addData(){
+        let name = document.querySelector('#name').value;
+        let code = document.querySelector('#code').value;
+        let password = document.querySelector('#password').value;
+
+        localStorage.setItem('userName', name);
+        localStorage.setItem('userCode', code);
+        localStorage.setItem('userPassword', password);
+
+        alert("cadastrado");
+    }
+
+    function checkData(){
+        let enterName = document.querySelector('#name').value;
+        let enterCode = document.querySelector('#code').value;
+        let enterPassword = document.querySelector('#password').value;
+
+        let getName = localStorage.getItem('userName');
+        let getCode = localStorage.getItem('userCode');
+        let getPassword = localStorage.getItem('userPassword');
+
+        if (enterCode == getCode)
+        {
+            if (enterPassword == getPassword){
+                alert('Sucess');
+            } else {
+                alert("Wrong password");
+            }
+        }
+        else {
+            alert("Wrong detais");
+        }
+    }
+
+    function setNamePerson(){
+        let setNamePerson = document.querySelector('.namePerson');
+
+        let getName = localStorage.getItem('userName');
+
+        setNamePerson.textContent = getName;
+    }
 
 
 
 
 
+
+</script>
 
 </body>
 </html>

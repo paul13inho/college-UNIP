@@ -25,19 +25,14 @@ body
 {
     top: 50%;
     transform: translateY(-35%);
-    @apply absolute w-w-screen;
+    @apply absolute w-full;
 }
 
 .container-home .options
 {
     top: 50%;
     transform: translateY(-50%);
-    @apply space-y-2 text-center absolute w-w-screen;
-}
-
-.container-booking
-{
-    @apply place-items-center;
+    @apply space-y-2 text-center absolute w-full;
 }
 
 .container-see-and-cancel .bookings
@@ -84,7 +79,7 @@ select
 
 form
 {
-    @apply w-full px-4;
+    @apply px-4;
 }
 /*END COMPONENTS*/
 
